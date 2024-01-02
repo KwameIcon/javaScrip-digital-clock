@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+    overflow: hidden;
+}
+
+.mainContainer{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 500px;
+    height: 350px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper{
+    width: 300px;
+    height: 150px;
+    border: 15px solid rgb(2, 179, 179);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.clock{
+    width: 260px;
+    height: 110px;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.clock span{
+    font-size: 80px;
+    color: rgb(1, 201, 1);
+}
+
+.bottomBorder{
+    position: relative;
+    width: 280px;
+    height: 15px;
+    background-color: #ccc;
+}
+
+.bottomBorder::before{
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 10px;
+    background-color: #000;
+    left: 10px;
+    top: 15px;
+}
+.bottomBorder::after{
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 10px;
+    background-color: #000;
+    right: 10px;
+    top: 15px;
+}
